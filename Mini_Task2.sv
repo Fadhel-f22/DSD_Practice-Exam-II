@@ -7,11 +7,13 @@ input logic load,
 input logic reset_n,
 input logic [4:0] pattern,
 input logic serial_in,
-output logic pattern_match
+output logic pattern_match,
+output logic [4:0]Q,
+output logic [4:0]D
     );
     
-logic [4:0]Q;
-logic [4:0]D;
+//logic [4:0]Q;
+//logic [4:0]D;
 
 always @ (posedge clk , negedge reset_n)
 begin
